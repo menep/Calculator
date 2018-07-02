@@ -40,7 +40,7 @@ h2 {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr) repeat(4, 0.5fr) 1fr;
+    grid-template-rows: repeat(2, 1fr) repeat(4, 0.5fr) repeat(2, 1fr);
     border-top-left-radius: 2rem;
 }
 
@@ -108,14 +108,17 @@ h2 {
     grid-row: 5 / 6;
 }
 
-div[data-digit="7"],
-div[data-digit="8"],
-div[data-digit="9"] {
+#num-7,
+#num-8,
+#num-9 {
     grid-row: 3 / 5;
 }
-
-div[data-digit="4"],
-div[data-digit="5"],
-div[data-digit="6"] {
+#num-4,
+#num-5,
+#num-6 {
     grid-row: 5 / 7;
+}
+
+#num-0 {
+    grid-column: 1 /4 ;
 }
